@@ -1,7 +1,7 @@
 # M19_OxiKit
 DiY Oxygen Concentrator based on the OxiKit
 
-![OxiKit render](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/renders/Screenshot%20from%202021-04-25%2015-49-31.png)
+![OxiKit render](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/renders/oxikit_ortho_pump.png)
 
 ## About
 
