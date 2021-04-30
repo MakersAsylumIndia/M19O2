@@ -7,3 +7,6 @@
 [submodule "M19_Oxikit_CAE"]
 	path = M19_Oxikit_CAE
 	url = https://github.com/argo-1/M19_Oxikit_CAE.git
+[submodule "M19_OxiKit_Electronics"]
+	path = M19_OxiKit_Electronics
+	url = https://github.com/argo-1/M19_OxiKit_Electronics.git
