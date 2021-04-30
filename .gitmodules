@@ -1,0 +1,6 @@
+[submodule "M19_OxiKit_CAD"]
+	path = M19_OxiKit_CAD
+	url = https://github.com/argo-1/M19_OxiKit_CAD.git
+[submodule "M19_Oxikit_SD"]
+	path = M19_Oxikit_SD
+	url = https://github.com/argo-1/M19_Oxikit_SD.git
