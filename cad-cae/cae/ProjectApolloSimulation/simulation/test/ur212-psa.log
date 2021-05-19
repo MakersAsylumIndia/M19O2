@@ -1,0 +1,119 @@
+Starting at 2020-07-30 15:49:50.400046
+Args: bonsai-single-sim.py --headless --brain=test
+00:00:00.01 params overriding input_orifice:2.78
+00:00:00.01 params overriding blowdown_orifice:3.5
+00:00:00.01 params overriding vent_orifice:1.56
+00:00:00.01 canister volume is 1.9207658214139827 L
+00:00:00.01 param.DL=0.00049
+00:00:00.01 using a real cycle time of   90.03 ->  156.81
+00:00:00.01 using a real vent time of   81.59 ->  142.11
+00:00:00.01 running for end_time of 4861.122445617422
+00:00:00.01 simulation params: time 0 to 4861.122445617422, step 0.2
+00:00:00.01 step time might be increased if long cycle time
+00:00:00.01 normalization velocity    0.618 m/s
+00:00:00.01 normalization of time norm.t0    0.574 sec
+00:00:00.01 starting with params import file: <module 'params' from '/mnt/c/Users/t-abaya/ProjectApollo/simulation/params.py'>
+00:00:00.01 initializing container state variables
+00:00:00.01 initializing container state variables
+00:00:01.81 git revision:"c462b34 2020-07-30 11:02:01 -0700"
+
+00:00:01.81 log code: ur212
+00:00:01.81 version:sys.version_info(major=3, minor=8, micro=2, releaselevel='final', serial=0)
+00:00:01.81 plt 3.3.0
+00:00:01.82 dimensionless groups:
+ { 'Pe': 447.9632983095026,
+  'Peh': 32.96356565327937,
+  'kprod': 6.391267857142855,
+  'omega1': array([4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07,
+       4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07,
+       4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07, 4.26674e-07,
+       4.26674e-07, 4.26674e-07]),
+  'omega2': array([0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017,
+       0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017, 0.0017]),
+  'omega3': array([0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015,
+       0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015,
+       0.00015, 0.00015]),
+  'omega4': array([0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025,
+       0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025, 0.00025,
+       0.00025, 0.00025]),
+  'pi1': 1.8615861926598102e-05,
+  'pi2': 1.2572225846096107e-06,
+  'pi3': 2.5671083175518457e-06,
+  'psi': 97.80746509897295,
+  'sigmaA': array([-0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0.,
+       -0., -0., -0.]),
+  'sigmaB': array([-0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0.,
+       -0., -0., -0.])}
+00:00:01.83 parameters:
+ { 'Cpa': 30.7,
+  'Cpg': 30.7,
+  'Cps': 1339,
+  'Cpw': 502,
+  'D': 0.083,
+  'DL': 0.00049,
+  'Dm': 1.6e-05,
+  'Dp': 5.333333333333333e-06,
+  'HA': 0,
+  'HB': 0,
+  'Kw': 16,
+  'Kz': 0.09,
+  'L': 0.355,
+  'N': 20,
+  'PH': 350000.0,
+  'R': 8.314,
+  'Ta': 293.15,
+  'adsorb': True,
+  'area': 0.005410607947645022,
+  'bA': 0.0042,
+  'bB': 0.0616,
+  'blowdown_orifice': 3.5,
+  'cellsize': 0.01775,
+  'container_vol': 0.0019207658214139827,
+  'cycle_time': 156.81040147152976,
+  'cycles': 31.0,
+  'deltaZ': 0.05,
+  'end_time': 4861.122445617422,
+  'epsb': 1.7027027027027026,
+  'epsilon': 0.37,
+  'epsilonp': 0.35,
+  'epst': 0.5873015873015873,
+  'eta': 0.72,
+  'feed_N2': 0.79,
+  'feed_O2': 0.21,
+  'feed_pressure': 3.5,
+  'gamma': 1.4,
+  'hin': 8.6,
+  'hout': 2.5,
+  'input_orifice': 2.78,
+  'kA': 0.62,
+  'kB': 0.197,
+  'mode': 1,
+  'mu': 1.72e-05,
+  'nA': 1.006,
+  'nB': 0.83,
+  'norm_t0': 0.5741405122285764,
+  'norm_v0': 0.6183155385117078,
+  'output_orifice': 1.4,
+  'product_orifice': 0.475,
+  'product_pressure': 2,
+  'product_tank_volume': 0.002,
+  'qAs': 0.0025,
+  'qBs': 0.0073,
+  'real_cycle_time': 90.03120422363281,
+  'real_vent_time': 81.59143525761704,
+  'rho_g': 1.1898660666240475,
+  'rho_s': 1130,
+  'rho_w': 7800,
+  'rin': 0.0415,
+  'rout': 0.2915,
+  'rp': 0.0007,
+  'tauprime': 3.0,
+  'tstep': 0.2,
+  'vent_orifice': 1.56,
+  'vent_time': 142.1105696598778,
+  'volume': 0.0019207658214139827}
+00:00:01.83 (140,) (140,) (2,)
+00:00:01.83 dynamics: kA= 0.62 1/sec  alphaA= 0.36   1/alphaA=  2.81
+00:00:01.83 dynamics: kB= 0.20 1/sec  alphaB= 0.11   1/alphaB=  8.84
+00:00:01.83 t_span (0, 4861.122446617423)
+00:00:12.77 done
