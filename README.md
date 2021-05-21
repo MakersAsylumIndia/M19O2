@@ -11,6 +11,7 @@ Read about the project on [Hackaday](https://hackaday.com/2021/04/26/indian-make
 
 - [M19 Oxykit Master](https://docs.google.com/spreadsheets/d/1rJZ5P0rF2Or8yu0H8HEPz25RP8kTAXxbNVU87DqD-eM/edit#gid=0) sheet tracks the city-wise coordinators, tools, FAQs etc.
 - [BOM M19 Oxykit](https://docs.google.com/spreadsheets/d/1gmmdXTP3EQk-4hCGVYj-FxzUMADlT8mw354VPmYt5A4/edit#gid=870920932) sheet lists the master Bill of Materials (BOM) along with city-wise BOM
+- [Starting a community lab](https://docs.google.com/document/d/1oR9rhGmbcnoSBjzQCYwE9Anocvr0q5_VmuVkbnycx18/edit?usp=sharing) document and [Build List for Labs](https://docs.google.com/spreadsheets/d/1DynT9Mh8jcV9qHxwFuQxj1fcQQHj_v_ymwpoZD1L23g/edit?usp=sharing) sheet for lab onboarding information and coordination.
 
 ### Contribute
 
