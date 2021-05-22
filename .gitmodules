@@ -1,0 +1,6 @@
+[submodule "engineering/electronics/M19-oxygen-concentrator-testbench"]
+	path = engineering/electronics/software/M19-oxygen-concentrator-testbench
+	url = https://github.com/FracktalWorks/M19-oxygen-concentrator-testbench.git
+[submodule "deployment/supply-demand mapping/CovidOxyNeed"]
+	path = deployment/supply-demand mapping/CovidOxyNeed
+	url = https://github.com/aman313/CovidOxyNeed.git
