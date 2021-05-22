@@ -7,7 +7,7 @@ DiY Oxygen Concentrator based on the OxiKit platform.
 
 Read about the project on [Hackaday](https://hackaday.com/2021/04/26/indian-makers-respond-to-the-covid-19-pandemic-by-producing-oxygen-concentrators/).
 
-### Contribute
+## Contribute
 
 You can contribute on the [Ketto fundraiser page](https://www.ketto.org/fundraiser/m19-oxygen-concentrators-make-in-india)
 
