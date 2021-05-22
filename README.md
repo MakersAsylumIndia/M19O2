@@ -24,18 +24,32 @@ You can contribute on the [Ketto fundraiser page](https://www.ketto.org/fundrais
 
 ## How to use this repo
 
-Fork this repository. You can find the command for this on the top-right of the webpage. This shall create a personal, updateable copy of this repository on your computer.
-
-Open a terminal. Enter the following
+Open a terminal on your computer. Run
 
 ```bash
-git clone https://github.com/<your-username>/M19_OxiKit && cd M19_OxiKit
+git clone https://github.com/MakersAsylumIndia/M19_OxiKit && cd M19_OxiKit
+git submodule update --init --recursive
+```
+The repository shall be available on your computer.
+To periodically update the contents,
+
+```bash
+cd M19_OxiKit
+git pull
 git submodule update --init --recursive
 ```
 
 ## How to contribute to this repository
 
-When you are done adding your contributions to your local copy of this repository, save it on github.
+Fork this repository. You can find the command for this on the top-right of the webpage. This shall create a personal, updateable copy of this repository on your github account.
+
+On your computer terminal, run
+
+```bash
+git clone https://github.com/<your-username>/M19_OxiKit && cd M19_OxiKit
+git submodule update --init --recursive
+```
+Add your contributions to this repository and save on github.
 
 ```bash
 cd M19_OxiKit
@@ -45,9 +59,6 @@ git push origin
 ```
 
 To contribute your work to the M19 Collective, open your repository in a browser and issue a pull request from your repository to the one at [Makers' Asylum](https://github.com/MakersAsylumIndia).
-
-Here, you can also keep your repository updated.
-
 
 ## License
 
