@@ -4,3 +4,6 @@
 [submodule "deployment/supply-demand mapping/CovidOxyNeed"]
 	path = deployment/supply-demand mapping/CovidOxyNeed
 	url = https://github.com/aman313/CovidOxyNeed.git
+[submodule "engineering/electronics/DIY_Oxygen_Analyzer"]
+	path = engineering/electronics/DIY_Oxygen_Analyzer
+	url = https://github.com/ashishkumarpardeshi/DIY_Oxygen_Analyzer.git

@@ -20,7 +20,8 @@ You can contribute on the [Ketto fundraiser page](https://www.ketto.org/fundrais
 ## Engineering
 
 - [Labview testbench](engineering/electronics/software/M19-oxygen-concentrator-testbench) is a testbench executable developed by [Fracktal Works](https://github.com/FracktalWorks), useful for tuning the performance of your concentrator prototypes.
-- [Computer-aided Design/Engineering](engineering/cad-cae) for design, version control and simulation data related to the OxiKit and its iterations. Committed to open-source and open-innovation.  
+- [Computer-aided Design/Engineering](engineering/cad-cae) for design, version control and simulation data related to the OxiKit and its iterations. Committed to open-source and open-innovation.
+- [DIY Oxygen Analyzer](engineering/electronics/DIY_Oxygen_Analyzer) for comprehensive design and development data of a DIY Oxygen Analyzer, distributed under the CC BY-SA 4.0 license.
 
 ## How to use this repo
 
