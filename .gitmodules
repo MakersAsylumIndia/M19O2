@@ -10,3 +10,6 @@
 [submodule "engineering/electronics/oxygen_analysers/OxygenAnalyserOOM202"]
 	path = engineering/electronics/oxygen_analysers/OxygenAnalyserOOM202
 	url = https://github.com/karantarade/OxygenAnalyserOOM202.git
+[submodule "engineering/electronics/subprojects/Oxikit-Brainboard"]
+	path = engineering/electronics/subprojects/Oxikit-Brainboard
+	url = https://github.com/shridattdudhat/Oxikit-Brainboard.git
