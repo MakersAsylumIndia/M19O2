@@ -13,6 +13,6 @@
 [submodule "engineering/electronics/subprojects/Oxikit-Brainboard"]
 	path = engineering/electronics/subprojects/Oxikit-Brainboard
 	url = https://github.com/shridattdudhat/Oxikit-Brainboard.git
-[submodule "engineering/software/M19_Oxygen_Concentrator_Firmware"]
-	path = engineering/software/M19_Oxygen_Concentrator_Firmware
-	url = https://github.com/FracktalWorks/M19_Oxygen_Concentrator_Firmware
+[submodule "engineering/Fracktal_M19_Oxygen_Concentrator"]
+	path = engineering/Fracktal_M19_Oxygen_Concentrator
+	url = https://github.com/FracktalWorks/Fracktal_M19_Oxygen_Concentrator.git
