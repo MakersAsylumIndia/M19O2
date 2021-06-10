@@ -10,15 +10,15 @@
 
 =======
 
-![Humidity Alarm photo 1](https://github.com/MakersAsylumIndia/M19_OxiKit/tree/main/engineering/O2_sensor_adapter/Photos/OOM_T_joint_01)
+![O2 sensor mount photo 1](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/engineering/O2_sensor_adapter/photos/OOM_T_joint_01.png)
 
-![Humidity Alarm photo 2](https://github.com/MakersAsylumIndia/M19_OxiKit/tree/main/engineering/O2_sensor_adapter/Photos/OOM_T_joint_02)
+![O2 sensor mount photo 2](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/engineering/O2_sensor_adapter/photos/OOM_T_joint_02.png)
 
-![Humidity Alarm photo 2](https://github.com/MakersAsylumIndia/M19_OxiKit/tree/main/engineering/O2_sensor_adapter/Photos/OOM_T_joint_03)
+![O2 sensor mount photo 3](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/engineering/O2_sensor_adapter/photos/OOM_T_joint_03.png)
 
-![Humidity Alarm photo 2](https://github.com/MakersAsylumIndia/M19_OxiKit/tree/main/engineering/O2_sensor_adapter/Photos/OOM_T_joint_04)
+![O2 sensor mount photo 4](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/engineering/O2_sensor_adapter/photos/OOM_T_joint_04.png)
 
-![Humidity Alarm photo 2](https://github.com/MakersAsylumIndia/M19_OxiKit/tree/main/engineering/O2_sensor_adapter/Photos/OOM_T_joint_05)
+![O2 sensor mount photo 5](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/engineering/O2_sensor_adapter/photos/OOM_T_joint_05.jpg)
 
 License
 -------
