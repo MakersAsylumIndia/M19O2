@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DHT22_pcb)(type Legacy)(uri ${KIPRJMOD}/DHT22_pcb.lib)(options "")(descr ""))
+)
