@@ -1,7 +1,7 @@
-# M19_OxiKit
-DiY Oxygen Concentrator based on the OxiKit platform.
+# M19O2
+DiY Oxygen Concentrator based on / inspired by the [OxiKit](https://github.com/OxiKit/oxygen-concentrator-how-to-diy-open-source#oxygen-concentrator-how-to-diy-open-source), [OpenOx](https://github.com/hacklabkyiv/openox), [Marut](https://www.technido.com/marut), [RepRap](https://github.com/RepRapLtd/Oxygen-concentrator) and [Project Apollo](https://github.com/oxycon/ProjectApollo) platforms.
 
-![OxiKit render](https://github.com/MakersAsylumIndia/M19_OxiKit/blob/main/renders/oxikit_ortho_pump.png)
+![M19O2 render](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/oxikit_ortho_pump.png)
 
 ## About
 
@@ -14,8 +14,8 @@ You can contribute on the [Ketto fundraiser page](https://www.ketto.org/fundrais
 ## Coordination lists
 
 - [Notion workspace](https://www.notion.so/M-19-Collective-b44b9d8d7dd14d5d86d417facf0f4141) for the M19 collective.
-- [M19 Oxykit Master](https://docs.google.com/spreadsheets/d/1rJZ5P0rF2Or8yu0H8HEPz25RP8kTAXxbNVU87DqD-eM/edit#gid=0) sheet tracks the city-wise coordinators, tools, FAQs etc.
-- [BOM M19 Oxykit](https://docs.google.com/spreadsheets/d/1gmmdXTP3EQk-4hCGVYj-FxzUMADlT8mw354VPmYt5A4/edit#gid=870920932) sheet lists the master Bill of Materials (BOM) along with city-wise BOM
+- [M19O2 Master](https://docs.google.com/spreadsheets/d/1rJZ5P0rF2Or8yu0H8HEPz25RP8kTAXxbNVU87DqD-eM/edit#gid=0) sheet tracks the city-wise coordinators, tools, FAQs etc.
+- [BOM M19O2](https://docs.google.com/spreadsheets/d/1gmmdXTP3EQk-4hCGVYj-FxzUMADlT8mw354VPmYt5A4/edit#gid=870920932) sheet lists the master Bill of Materials (BOM) along with city-wise BOM
 - [Starting a community lab](https://docs.google.com/document/d/1oR9rhGmbcnoSBjzQCYwE9Anocvr0q5_VmuVkbnycx18/edit?usp=sharing) document and [Build List for Labs](https://docs.google.com/spreadsheets/d/1DynT9Mh8jcV9qHxwFuQxj1fcQQHj_v_ymwpoZD1L23g/edit?usp=sharing) sheet for lab onboarding information and coordination.
 
 ## Engineering
@@ -29,14 +29,14 @@ You can contribute on the [Ketto fundraiser page](https://www.ketto.org/fundrais
 Open a terminal on your computer. Run
 
 ```bash
-git clone https://github.com/MakersAsylumIndia/M19_OxiKit && cd M19_OxiKit
+git clone https://github.com/MakersAsylumIndia/M19O2 && cd M19O2
 git submodule update --init --recursive
 ```
 The repository shall be available on your computer.
 To periodically update the contents,
 
 ```bash
-cd M19_OxiKit
+cd M19O2
 git pull
 git submodule update --init --recursive
 ```
@@ -48,13 +48,13 @@ Fork this repository. You can find the command for this on the top-right of the 
 On your computer terminal, run
 
 ```bash
-git clone https://github.com/<your-username>/M19_OxiKit && cd M19_OxiKit
+git clone https://github.com/<your-username>/M19O2 && cd M19O2
 git submodule update --init --recursive
 ```
 Add your contributions to this repository and save on github.
 
 ```bash
-cd M19_OxiKit
+cd M19O2
 git add .
 git commit -m "<your-commit-message>"
 git push origin
