@@ -8,11 +8,11 @@
   Only two orifices - one each at the output of each sieve.
   Input to surge tank goes via a non-return valve (NRV)
 
-  This code is in the public domain.
+  This code is in the public domain. LICENSE = MIT
 
   Hardware and code by Anool J M (@anool) and Narender Sharma of Maker's Asylum
 
-  https://github.com/MakersAsylumIndia/M19_OxiKit/tree/main/engineering/software/M19O2_LiX
+  https://github.com/MakersAsylumIndia/M19O2/tree/main/engineering/software/M19O2_LiX
   
 
 */
