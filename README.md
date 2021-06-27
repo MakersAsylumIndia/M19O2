@@ -5,6 +5,8 @@ DiY Oxygen Concentrator based on / inspired by the [OxiKit](https://github.com/O
 
 ![M19O2 render rear](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v3_03.png)
 
+![M19O2 render rear](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v3_05.png)
+
 ## About
 
 Read about the project on [Hackaday](https://hackaday.com/2021/04/26/indian-makers-respond-to-the-covid-19-pandemic-by-producing-oxygen-concentrators/).
