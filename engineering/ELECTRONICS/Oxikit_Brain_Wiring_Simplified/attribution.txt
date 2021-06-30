@@ -1,3 +1,0 @@
-Oxygen concentrator simplified wiring layout designed by Ashish Pardeshi
-GIT repo at https://github.com/ashishkumarpardeshi/Oxikit_Brain_Wiring_Simplified
-

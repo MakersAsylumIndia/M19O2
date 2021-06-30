@@ -1,0 +1,237 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_Fuse
+#
+DEF Device_Fuse F 0 0 N Y 1 F N
+F0 "F" 80 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Fuse*
+$ENDFPLIST
+DRAW
+S -30 -100 30 100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# myComponents_AC2DC_Converter
+#
+DEF myComponents_AC2DC_Converter M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "myComponents_AC2DC_Converter" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -405 240 420 -325 0 0 20 f
+P 2 0 0 20 -120 240 -120 -325 N
+X 12/24v(+) ~ 530 135 100 L 50 51 1 1 w
+X E ~ -510 -50 100 R 50 90 1 1 W
+X Gnd(-) ~ 525 -230 100 L 50 51 1 1 w
+X L ~ -510 125 100 R 50 90 1 1 W
+X N ~ -515 -220 100 R 50 90 1 1 W
+ENDDRAW
+ENDDEF
+#
+# myComponents_Arduino
+#
+DEF myComponents_Arduino M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "myComponents_Arduino" 0 0 50 H V C CNB
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 345 475 -595 0 1 20 f
+X +5v ~ -300 -60 100 R 50 51 1 1 W
+X D5 ~ 585 35 100 L 50 51 1 1 O
+X D6 ~ 585 -90 100 L 50 51 1 1 O
+X D7 ~ 585 -205 100 L 50 51 1 1 O
+X D8 ~ 585 -310 100 L 50 51 1 1 O
+X Gnd(-) ~ -295 -245 100 R 50 51 1 1 W
+ENDDRAW
+ENDDEF
+#
+# myComponents_Compressor
+#
+DEF myComponents_Compressor M 0 0 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "myComponents_Compressor" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -5 30 248 0 0 20 f
+P 2 0 0 20 -70 140 0 270 N
+P 2 0 0 20 -70 140 65 140 N
+P 2 0 0 20 0 270 0 405 N
+P 2 0 0 20 65 140 0 275 N
+P 2 0 0 20 215 -90 475 -90 N
+P 2 0 0 20 230 115 470 115 N
+X E ~ -5 -320 100 U 50 51 1 1 W
+X L ~ -355 80 100 R 50 51 1 1 W
+X N ~ -350 -55 100 R 50 51 1 1 W
+ENDDRAW
+ENDDEF
+#
+# myComponents_DC2DC_Converter
+#
+DEF myComponents_DC2DC_Converter M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "myComponents_DC2DC_Converter" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -405 240 420 -325 0 0 20 f
+X +5v ~ 530 140 100 L 50 51 1 1 w
+X 12/24v(+) ~ -515 145 100 R 50 51 1 1 W
+X Gnd(-) ~ -515 -220 100 R 50 51 1 1 w
+X GND(-) ~ 530 -220 100 L 50 51 1 1 w
+ENDDRAW
+ENDDEF
+#
+# myComponents_Fan
+#
+DEF myComponents_Fan M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "myComponents_Fan" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 209 0 1 20 f
+T 0 -45 290 62 0 0 0 + Normal 0 C C
+T 900 -40 -275 62 0 0 0 - Normal 0 C C
+P 2 0 1 12 0 165 0 -170 N
+P 5 0 1 12 0 -170 -140 -90 135 85 0 165 0 160 N
+X ~ ~ 0 -315 100 U 50 51 1 1 W
+X ~ ~ 0 310 100 D 50 51 1 1 W
+ENDDRAW
+ENDDEF
+#
+# myComponents_Relay_Board
+#
+DEF myComponents_Relay_Board M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "myComponents_Relay_Board" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -465 670 870 -1395 0 1 20 f
+S 870 -595 590 -925 0 1 20 N
+S 870 -220 590 -550 0 1 20 N
+S 870 155 590 -175 0 1 20 N
+S 870 530 590 200 0 1 20 N
+X +12/24v ~ -575 -700 100 R 50 51 1 1 W
+X C1 ~ 975 445 100 L 50 51 1 1 I
+X C2 ~ 980 75 100 L 50 51 1 1 I
+X C3 ~ 980 -300 100 L 50 51 1 1 I
+X C4 ~ 980 -675 100 L 50 51 1 1 I
+X Gnd(-) ~ -575 -905 100 R 50 51 1 1 W
+X IN1 ~ -575 320 100 R 50 51 1 1 I
+X IN2 ~ -575 170 100 R 50 51 1 1 I
+X IN3 ~ -570 25 100 R 50 51 1 1 I
+X IN4 ~ -575 -130 100 R 50 51 1 1 I
+X NO1 ~ 970 265 100 L 50 51 1 1 I
+X NO2 ~ 980 -95 100 L 50 51 1 1 I
+X NO3 ~ 980 -475 100 L 50 51 1 1 I
+X NO4 ~ 980 -850 100 L 50 51 1 1 I
+ENDDRAW
+ENDDEF
+#
+# myComponents_Sol_Valve
+#
+DEF myComponents_Sol_Valve V 0 40 Y Y 1 F N
+F0 "V" 0 0 50 H V C CNN
+F1 "myComponents_Sol_Valve" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -40 250 62 0 0 0 + Normal 0 C C
+T 900 -40 -200 62 0 0 0 - Normal 0 C C
+S -285 170 270 -135 0 0 20 f
+P 3 0 0 20 -210 170 190 -135 195 -135 N
+X ~ ~ 0 -245 100 U 50 51 1 1 W
+X ~ ~ 0 280 100 D 50 51 1 1 W
+ENDDRAW
+ENDDEF
+#
+# myComponents_Switch
+#
+DEF myComponents_Switch S 0 0 Y Y 1 F N
+F0 "S" -5 165 50 H V C CNN
+F1 "myComponents_Switch" 0 85 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -55 -20 10 0 0 0 N
+C 35 -20 10 0 0 0 N
+S -110 40 100 -75 0 0 12 f
+P 2 0 0 0 -65 -20 -140 -20 N
+P 2 0 0 0 -50 -10 20 25 N
+P 2 0 0 0 45 -20 130 -20 N
+X ~ ~ -185 -20 100 R 50 129 1 1 W
+X ~ ~ 175 -20 100 L 50 129 1 1 W
+ENDDRAW
+ENDDEF
+#
+# myComponents_Wall_Plug
+#
+DEF myComponents_Wall_Plug P 0 40 Y Y 1 F N
+F0 "P" -125 545 50 H V C CNN
+F1 "myComponents_Wall_Plug" -70 420 50 H V C CNN
+F2 "" 750 50 50 H I C CNN
+F3 "" 750 50 50 H I C CNN
+DRAW
+A -108 -7 302 904 -894 0 0 20 f -110 295 -105 -310
+T 0 -755 50 90 0 0 0 "230 V" Normal 1 C C
+T 0 -735 -105 90 0 0 0 AC Normal 1 C C
+T 0 340 55 62 0 0 0 Earth Normal 1 C C
+T 0 350 230 62 0 0 0 Line Normal 1 C C
+T 0 380 -100 62 0 0 0 Neutral Normal 1 C C
+T 0 -2730 -155 286 0 0 0 "~" Normal 1 C C
+P 2 0 0 59 -130 -200 -345 -200 N
+P 2 0 0 59 -130 -10 -465 -10 N
+P 2 0 0 59 -130 190 -350 190 N
+P 2 0 0 20 160 -165 530 -165 N
+P 2 0 0 20 160 155 525 155 N
+P 2 0 0 20 205 -10 325 -10 N
+P 4 0 0 20 -110 290 -110 -305 -110 -300 -95 -310 N
+X ~ ~ 390 -10 179 L 50 129 1 1 w
+X ~ ~ 585 155 179 L 50 129 1 1 w
+X ~ ~ 590 -165 179 L 50 129 1 1 w
+ENDDRAW
+ENDDEF
+#
+# power_Earth_Clean
+#
+DEF power_Earth_Clean #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 250 0 50 H I C CNN
+F1 "power_Earth_Clean" 300 -150 50 H I C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+A 0 -150 100 1 1799 0 1 0 N 100 -150 -100 -150
+P 2 0 1 0 -25 -125 25 -125 N
+P 2 0 1 0 -5 -150 5 -150 N
+P 2 0 1 0 0 -100 0 0 N
+P 2 0 1 0 50 -100 -50 -100 N
+X Earth_Clean 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
