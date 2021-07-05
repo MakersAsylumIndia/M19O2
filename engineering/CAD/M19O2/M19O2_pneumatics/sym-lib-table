@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name M19O2_wiring)(type Legacy)(uri ${KIPRJMOD}/M19O2_wiring.lib)(options "")(descr ""))
+  (lib (name M19O2_pneumatic)(type Legacy)(uri ${KIPRJMOD}/M19O2_pneumatic.lib)(options "")(descr ""))
 )

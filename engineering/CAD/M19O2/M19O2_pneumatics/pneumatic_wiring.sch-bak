@@ -27,23 +27,23 @@ $EndComp
 $Comp
 L M19O2_pneumatic:CoolingCoil CC?
 U 1 1 60E268B1
-P 4550 14275
-F 0 "CC?" H 4550 14850 50  0001 C CNN
-F 1 "COOLING COILS" H 4550 14775 75  0000 C CNB
-F 2 "" H 4550 14275 50  0001 C CNN
-F 3 "" H 4550 14275 50  0001 C CNN
-	1    4550 14275
+P 4425 14275
+F 0 "CC?" H 4425 14850 50  0001 C CNN
+F 1 "COOLING COILS" H 4425 14775 75  0000 C CNB
+F 2 "" H 4425 14275 50  0001 C CNN
+F 3 "" H 4425 14275 50  0001 C CNN
+	1    4425 14275
 	1    0    0    -1  
 $EndComp
 $Comp
 L M19O2_pneumatic:WaterSeparator WS?
 U 1 1 60E27AD6
-P 6400 14275
-F 0 "WS?" H 6425 14875 50  0001 C CNN
-F 1 "WATER SEPARATOR" H 6400 14775 75  0000 C CNB
-F 2 "" H 6400 14275 50  0001 C CNN
-F 3 "" H 6400 14275 50  0001 C CNN
-	1    6400 14275
+P 6275 14275
+F 0 "WS?" H 6300 14875 50  0001 C CNN
+F 1 "WATER SEPARATOR" H 6275 14775 75  0000 C CNB
+F 2 "" H 6275 14275 50  0001 C CNN
+F 3 "" H 6275 14275 50  0001 C CNN
+	1    6275 14275
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -62,7 +62,7 @@ L M19O2_pneumatic:Valve_5_3_Solenoid V?
 U 1 1 60E2A646
 P 5850 9400
 F 0 "V?" H 4300 9450 50  0001 R CNN
-F 1 "VALVE 5/3 24V SOLENOID" H 8875 9700 75  0000 R CNB
+F 1 "VALVE 5/3 24V SOLENOID" H 7025 9750 75  0000 R CNB
 F 2 "" H 5850 9400 50  0001 C CNN
 F 3 "" H 5850 9400 50  0001 C CNN
 	1    5850 9400
@@ -71,12 +71,12 @@ $EndComp
 $Comp
 L M19O2_pneumatic:Reservoir T?
 U 1 1 60E30E69
-P 8575 13125
-F 0 "T?" H 8875 13250 50  0001 L CNN
-F 1 "DESSICANT (OPTION)" H 8875 13100 75  0000 L CNB
-F 2 "" H 8575 13125 50  0001 C CNN
-F 3 "" H 8575 13125 50  0001 C CNN
-	1    8575 13125
+P 8325 13125
+F 0 "T?" H 8625 13250 50  0001 L CNN
+F 1 "DESSICANT (OPTION)" H 8625 13100 75  0000 L CNB
+F 2 "" H 8325 13125 50  0001 C CNN
+F 3 "" H 8325 13125 50  0001 C CNN
+	1    8325 13125
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -183,7 +183,7 @@ L M19O2_pneumatic:OOM102_flow U?
 U 1 1 60E60645
 P 6075 1300
 F 0 "U?" V 7100 1325 50  0001 C CNN
-F 1 "O2 SENSOR" V 5725 575 75  0000 C CNB
+F 1 "O2 SENSOR" V 5725 1300 75  0000 C CNB
 F 2 "" H 6075 1300 50  0001 C CNN
 F 3 "" H 6075 1300 50  0001 C CNN
 	1    6075 1300
@@ -245,34 +245,34 @@ F 3 "" H 6350 10275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
-	2300 14275 4175 14275
+	2300 14275 4050 14275
 Wire Bus Line
 	2300 14400 2300 14275
 Wire Wire Line
 	2300 14400 2300 14275
 Wire Wire Line
-	2300 14275 4175 14275
+	2300 14275 4050 14275
 Wire Wire Line
-	4925 14275 5475 14275
+	4800 14275 5350 14275
 Wire Bus Line
-	4925 14275 5475 14275
+	4800 14275 5350 14275
 Wire Wire Line
-	8575 14275 8575 13750
+	8325 14275 8325 13750
 Wire Bus Line
-	8575 14275 8575 13750
+	8325 14275 8325 13750
 Wire Wire Line
-	5475 14275 5475 13425
+	5350 14275 5350 13425
 Wire Wire Line
-	5475 13425 2325 13425
-Connection ~ 5475 14275
+	5350 13425 2325 13425
+Connection ~ 5350 14275
 Wire Wire Line
-	5475 14275 6025 14275
+	5350 14275 5900 14275
 Wire Bus Line
-	5475 14275 6025 14275
+	5350 14275 5900 14275
 Wire Bus Line
-	5475 14275 5475 13425
+	5350 14275 5350 13425
 Wire Bus Line
-	5475 13425 2325 13425
+	5350 13425 2325 13425
 Wire Bus Line
 	5200 9750 5200 10275
 Wire Bus Line
@@ -405,9 +405,9 @@ NEUT
 Text HLabel 1025 15325 0    50   Input ~ 10
 EARTH
 Wire Wire Line
-	6775 14275 8575 14275
+	6650 14275 8325 14275
 Wire Bus Line
-	6775 14275 8575 14275
+	6650 14275 8325 14275
 Wire Wire Line
 	5350 9750 5350 12025
 Wire Bus Line
@@ -417,13 +417,13 @@ Wire Wire Line
 Wire Bus Line
 	5350 12025 6475 12025
 Wire Wire Line
-	7475 12025 8575 12025
+	7475 12025 8325 12025
 Wire Wire Line
-	8575 12025 8575 12500
+	8325 12025 8325 12500
 Wire Bus Line
-	7475 12025 8575 12025
+	7475 12025 8325 12025
 Wire Bus Line
-	8575 12025 8575 12500
+	8325 12025 8325 12500
 Wire Wire Line
 	7075 1900 6475 1900
 Wire Wire Line
@@ -447,36 +447,8 @@ Wire Bus Line
 	8075 1900 8375 1900
 Text GLabel 8375 1900 2    100  Output ~ 20
 BLEED,<0.3LPM
-Text Notes 2325 15850 0    75   ~ 0
-1800W / 2.5 hp \nZHEJIANG TENGJIGN AIR COMPRESSOR\nModel JB1800\n275 LPM @ 1 bar\n233 LPM @ 4 bar
-Text Notes 2300 14200 0    75   ~ 0
-2 nos 10mm OD Cu pipe\nEach coil 12 turns, ~~110 mm dia\n1/2" Male coupler for hot end\n3/8" Female coupler for cold end
-Text Notes 6800 14225 0    75   ~ 0
-Hydint \nModel HPVS Separator\nModel ADB-150 Auto Drain
-Text Notes 8875 13825 0    75   ~ 0
-Required if Humidity level\nafter previous stage is more\nthan 50% rh\nUse Alumina or Silica Gel\nSize, 75 mm ID x 250 mm tall
-Text Notes 775  12975 0    75   ~ 0
-Danfoss\nModel KP-35 or equivalent
-Text Notes 7475 11975 0    75   ~ 0
-Required when testing\nbut not necessary in production
-Text Notes 7400 9650 0    75   ~ 0
-Use a single 5/3 valve\nor two 3/2 valves\n1/2" or 3/8" ports\n24 VDC coil
-Text Notes 4725 8300 0    75   ~ 0
-Aluminum extrusion cannisters\n75 mm ID x 500 mm tall\nLiX Zeolite, 0.4 ~~ 0.8 mm bead\n3/8" ports at both ends\nSee Sieve Assembly document for\nconstruction details
-Text Notes 8150 6875 0    75   ~ 0
-Machined Aluminum or Brass\n(laser cut acrylic works too)\nOD to suit ID of pneumatic pipe\nOrifice bore dia = betn 1.0 to 1.8 mm\nLength, approx 10 mm or more\nAll edges deburred
-Text Notes 6150 5275 0    75   ~ 0
-Aluminum Extrusion\n75 mm ID x 250 mm tall
-Text Notes 2125 3800 0    75   ~ 0
-Up to 2 bar range
-Text Notes 4275 3800 0    75   ~ 0
-Particulate filter
-Text Notes 5575 3800 0    75   ~ 0
-15 LPM range
-Text Notes 7200 3800 0    75   ~ 0
-Bubbler bottle
-Text Notes 5675 1350 2    75   ~ 0
-OOM102 or similar\nElectro-chemical sensor\nconnected to Electronics
-Text Notes 6700 1250 0    75   ~ 0
-Bleed valve, one way\nset to about less than 0.3 LPM
+Text Notes 2325 15775 0    75   ~ 0
+1800W / 2.5 hp \nZHEJIANG TENGJIGN AIR COMPRESSOR CO.,LTD\nModel JB1800\n275 LPM @ 1 bar\n233 LPM @ 4 bar
+Text Notes 3950 15125 0    75   ~ 0
+2 nos 10mm OD Copper pipe,\nCoil = 12 turns, approx 110 mm dia\n1/2" Male coupler for hot end\n3/8" Female coupler for cold end
 $EndSCHEMATC
