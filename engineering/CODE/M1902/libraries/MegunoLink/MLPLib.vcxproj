@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildToolsPath>$(registry:HKEY_CURRENT_USER\Software\Blue Leaf Software\Arduino Build Tools@Tools)</BuildToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(BuildToolsPath)'==''">
+    <BuildToolsPath>$(VCTargetsPath)Platforms\BLSArduino\</BuildToolsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PropertyPageSchema Condition="'$(ConfigurationType)' != 'Utility'" Include="$(BuildToolsPath)Hardware.xml;$(BuildToolsPath)Build.xml;$(BuildToolsPath)Libraries.xml" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60C8E4F8-C1BA-44CD-B07B-ED536EB9C571}</ProjectGuid>
+    <RootNamespace>MLPLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <!-- Import path, build too and default configurations. -->
+  <Import Project="$(BuildToolsPath)Tools.props" />
+  <Import Project="$(BuildToolsPath)TargetDevice.props" />
+  <Import Project="$(BuildToolsPath)Arduino User Library.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)\bin\$(Configuration)\</OutDir>
+    <TargetExt>.a</TargetExt>
+    <TargetDevice>Uno</TargetDevice>
+    <LibraryFolder>EEPROM;SPI;SD;Ethernet</LibraryFolder>
+    <IncludePath>$(ProjectDir);$(ArduinoVariantPath)\$(Variant);$(ArduinoCorePath);$(ArduinoLibPath);$(AVRRoot)\avr\include;$(AVRRoot)\lib\gcc\avr\4.3.2\include</IncludePath>
+    <IntDir>obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetDevice>Uno</TargetDevice>
+    <OutDir>$(ProjectDir)\bin\$(Configuration)\</OutDir>
+    <TargetExt>.elf</TargetExt>
+    <LibraryFolder>EEPROM;SPI;SD;Ethernet</LibraryFolder>
+    <IncludePath>$(ProjectDir);$(ArduinoVariantPath)\$(Variant);$(ArduinoCorePath);$(ArduinoLibPath);$(AVRRoot)\avr\include;$(AVRRoot)\lib\gcc\avr\4.3.2\include</IncludePath>
+    <IntDir>obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <ForcedIncludeFiles>$(BuildToolsPath)ArduinoVisualStudioFixes.h</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <ForcedIncludeFiles>$(BuildToolsPath)ArduinoVisualStudioFixes.h</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ArduinoTimer.h" />
+    <ClInclude Include="CircularBuffer.h" />
+    <ClInclude Include="CommandHandler.h" />
+    <ClInclude Include="CommandProcessor.h" />
+    <ClInclude Include="EEPROMStore.h" />
+    <ClInclude Include="Filter.h" />
+    <ClInclude Include="MegunoLink.h" />
+    <ClInclude Include="utility\CommandDispatcher.h" />
+    <ClInclude Include="utility\CommandDispatcherBase.h" />
+    <ClInclude Include="utility\CommandParameter.h" />
+    <ClInclude Include="utility\InterfacePanel.h" />
+    <ClInclude Include="utility\Map.h" />
+    <ClInclude Include="utility\MegunoLinkProtocol.h" />
+    <ClInclude Include="utility\Message.h" />
+    <ClInclude Include="utility\Plot.h" />
+    <ClInclude Include="utility\StreamParser.h" />
+    <ClInclude Include="utility\Table.h" />
+    <ClInclude Include="utility\TimePlot.h" />
+    <ClInclude Include="utility\XYPlot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArduinoTimer.cpp" />
+    <ClCompile Include="utility\CommandDispatcherBase.cpp" />
+    <ClCompile Include="utility\CommandParameter.cpp" />
+    <ClCompile Include="utility\InterfacePanel.cpp" />
+    <ClCompile Include="utility\Map.cpp" />
+    <ClCompile Include="utility\MegunoLinkProtocol.cpp" />
+    <ClCompile Include="utility\Message.cpp" />
+    <ClCompile Include="utility\Plot.cpp" />
+    <ClCompile Include="utility\StreamParser.cpp" />
+    <ClCompile Include="utility\Table.cpp" />
+    <ClCompile Include="utility\TimePlot.cpp" />
+    <ClCompile Include="utility\XYPlot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="examples\InterfacePanel\MultiSourceCommandHandler\MultiSourceCommandHandler.ino" />
+    <None Include="examples\InterfacePanel\SendToMLP\SendToMLP.ino" />
+    <None Include="examples\InterfacePanel\SendToMLP\SendToMLP.mlx" />
+    <None Include="examples\InterfacePanel\SetParameters\Set parameters.mlx" />
+    <None Include="examples\InterfacePanel\SetParameters\SetParameters.ino" />
+    <None Include="examples\InterfacePanel\ValueList\ValueList.ino" />
+    <None Include="examples\InterfacePanel\ValueList\ValueList.mlx" />
+    <None Include="examples\Mapping\PlotCoordinates\PlotCoordinates.ino" />
+    <None Include="examples\Mapping\PlotCoordinates\PlotCoordinates.mlx" />
+    <None Include="examples\MessageLogger\SendCSVData\SendCSVData.ino" />
+    <None Include="examples\MessageLogger\SendCSVData\SendCSVData.mlx" />
+    <None Include="examples\MessageMonitor\SendCSVData\SendCSVData.ino" />
+    <None Include="examples\MessageMonitor\SendCSVData\SendCSVData.mlx" />
+    <None Include="examples\Other\MLPExample\MLPExample.ino" />
+    <None Include="examples\Other\MLPExample\MLPExample.mlx" />
+    <None Include="examples\Table\SendToTable\SendToTable.ino" />
+    <None Include="examples\Table\SendToTable\SendToTable.mlx" />
+    <None Include="examples\TimePlot\PlotAnalogValue\PlotAnalogValue.ino" />
+    <None Include="examples\TimePlot\PlotAnalogValue\PlotAnalogValue.mlx" />
+    <None Include="examples\TimePlot\Sinewave\Sinewave.ino" />
+    <None Include="examples\TimePlot\Sinewave\Sinewave.mlx" />
+    <None Include="examples\TimePlot\UDP_Datalogger\UDP_Datalogger\UDP_Datalogger.ino" />
+    <None Include="examples\TimePlot\UDP_Datalogger\UDP_Datalogger\UDP_Datalogger.mlx" />
+    <None Include="examples\XYPlot\Lissajou\Lissajou.ino" />
+    <None Include="examples\XYPlot\Lissajou\Lissajou.mlx" />
+    <None Include="examples\XYPlot\PlotAnalogValue\PlotAnalogValue.ino" />
+    <None Include="examples\XYPlot\PlotAnalogValue\PlotAnalogValue.mlx" />
+    <None Include="MLPLib.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Version.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="$(BuildToolsPath)Build User Library.xml" />
+</Project>
