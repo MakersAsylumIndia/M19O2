@@ -20,7 +20,7 @@
 #include <Filter.h>                      //  https://www.megunolink.com/documentation/arduino-libraries/exponential-filter/
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1305.h>
-#include <Adafruit_ADS1X15.h>
+#include <Adafruit_ADS1015.h>
 
 // I2C DISPLAY
 //****************************************************************
@@ -42,7 +42,7 @@ Adafruit_ADS1115 ads;
 int adc0;                           //sensor connected on adc 0 pin
 int O2;                           //variable to store o2 concentration
 float factor;                       //multiplication factor to convert adc values in O2 concentration
-const float multiplier = 0.1875F;   //ADC 1 bit = 0.1875mV , ADC set to default gain
+const float multiplier = 0.1875;   //ADC 1 bit = 0.1875mV , ADC set to default gain
 float O2_SMOOTH;                    //Filtered value
 ExponentialFilter<float> O2_FILTERED(20, 20.9);   // the <float> makes a filter for float numbers // 20 is the weight (20 => 20%) // 20.9 is the initial value of the filter
 
@@ -77,7 +77,7 @@ const int debounce = 200;
 
 //Set delay timing here
 //**************************************************************************
-int CYCLE_TIME = 7000;
+int CYCLE_TIME = 10000;
 int FLUSH_TIME = 850;
 int PRODUCTION_TIME = CYCLE_TIME - 2 * FLUSH_TIME;
 
@@ -148,10 +148,10 @@ void RUN_CYCLE() {
   //CYCLE 1
   //*****************************************************
   if ((millis() - prevCycleTime >= waitTime) && (prevCycle == 4)) {
-    //Serial.println("Cycle 1");
+    Serial.println("Cycle 1");
     digitalWrite(SIEVE_A_PIN, LOW);
     digitalWrite(SIEVE_B_PIN, LOW);
-    //Serial.println("SEIVE A: ON, SEIVE B: ON");
+    Serial.println("SEIVE A: ON, SEIVE B: ON");
     prevCycleTime = millis();
     prevCycle = 1;
     waitTime = FLUSH_TIME;
@@ -160,9 +160,9 @@ void RUN_CYCLE() {
   //CYCLE2
   //****************************************************
   if ((millis() - prevCycleTime >= waitTime) && (prevCycle == 1)) {
-    //Serial.println("Cycle 2");
+    Serial.println("Cycle 2");
     digitalWrite(SIEVE_B_PIN, HIGH);
-    //Serial.println("SEIVE A: ON, SEIVE B: OFF");
+    Serial.println("SEIVE A: ON, SEIVE B: OFF");
     prevCycleTime = millis();
     prevCycle = 2;
     waitTime = PRODUCTION_TIME;
@@ -171,9 +171,9 @@ void RUN_CYCLE() {
   //CYCLE 3
   //****************************************************
   if ((millis() - prevCycleTime >= waitTime) && (prevCycle == 2)) {
-    //Serial.println("Cycle 3");
+    Serial.println("Cycle 3");
     digitalWrite(SIEVE_B_PIN, LOW);
-    //Serial.println("SEIVE A: ON, SEIVER B: ON");
+    Serial.println("SEIVE A: ON, SEIVER B: ON");
     prevCycleTime = millis();
     prevCycle = 3;
     waitTime = FLUSH_TIME;
@@ -182,9 +182,9 @@ void RUN_CYCLE() {
   //CYCLE 4
   //***************************************************
   if ((millis() - prevCycleTime >= waitTime) && (prevCycle == 3)) {
-    //Serial.println("Cycle 4");
+    Serial.println("Cycle 4");
     digitalWrite(SIEVE_A_PIN, HIGH);
-    //Serial.println("SEIVE A: OFF, SEIVE B: ON");
+    Serial.println("SEIVE A: OFF, SEIVE B: ON");
     prevCycleTime = millis();
     prevCycle = 4;
     waitTime = PRODUCTION_TIME;
@@ -198,7 +198,7 @@ void GET_TEMP() {
   t = dht.readTemperature();
 
   if (isnan(h) || isnan(t)) {
-    //Serial.println(F("Failed to read from DHT sensor!"));
+    Serial.println(F("Failed to read from DHT sensor!"));
     digitalWrite(RED, LOW);
     digitalWrite(GREEN, LOW);
     digitalWrite(BLUE, LOW);
@@ -283,19 +283,21 @@ void DISPLAY_DATA() {
 //CALCULATE THE O2 CONCENTRATION
 //**************************************************************************
 void O2_CONCENTRATION() {
-  adc0 = ads.readADC_SingleEnded(0); // Read ADC value from ADS1115
+adc0 = ads.readADC_SingleEnded(0); // Read ADC value from ADS1115
+  
   Serial.println(factor);
   Serial.print("Analog pin 0: ");
   Serial.print(adc0);
-  O2 = adc0 / factor;
+  O2 = map(adc0, 75, 350, 20, 100); 
+  //O2 = adc0 / factor;
   O2_FILTERED.Filter(O2);            //Calculate the filtered value
   O2_SMOOTH = O2_FILTERED.Current(); //calculate current filtered value
   
-  Serial.print("\t");
-  Serial.print(O2);
-  Serial.print("\t");
-
-  Serial.println(O2_SMOOTH);
+//  Serial.print("\t");
+//  Serial.print(O2);
+//  Serial.print("\t");
+//
+//  Serial.println(O2_SMOOTH);
   if (O2_SMOOTH > 100 && O2_SMOOTH < 20) {
     Serial.println("Error reading oxygen percent");
   }

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arduino Examples">
+      <UniqueIdentifier>{b0136734-114d-4159-917e-7889c6c731be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MLPLib.props" />
+    <None Include="examples\XYPlot\Lissajou\Lissajou.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\XYPlot\Lissajou\Lissajou.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\Other\MLPExample\MLPExample.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\Other\MLPExample\MLPExample.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\InterfacePanel\MultiSourceCommandHandler\MultiSourceCommandHandler.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\TimePlot\PlotAnalogValue\PlotAnalogValue.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\XYPlot\PlotAnalogValue\PlotAnalogValue.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\TimePlot\PlotAnalogValue\PlotAnalogValue.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\XYPlot\PlotAnalogValue\PlotAnalogValue.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\Mapping\PlotCoordinates\PlotCoordinates.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\Mapping\PlotCoordinates\PlotCoordinates.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\MessageMonitor\SendCSVData\SendCSVData.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\MessageLogger\SendCSVData\SendCSVData.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\MessageMonitor\SendCSVData\SendCSVData.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\MessageLogger\SendCSVData\SendCSVData.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\InterfacePanel\SendToMLP\SendToMLP.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\InterfacePanel\SendToMLP\SendToMLP.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\Table\SendToTable\SendToTable.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\Table\SendToTable\SendToTable.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\InterfacePanel\SetParameters\Set parameters.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\InterfacePanel\SetParameters\SetParameters.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\TimePlot\Sinewave\Sinewave.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\TimePlot\Sinewave\Sinewave.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\TimePlot\UDP_Datalogger\UDP_Datalogger\UDP_Datalogger.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\TimePlot\UDP_Datalogger\UDP_Datalogger\UDP_Datalogger.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\InterfacePanel\ValueList\ValueList.ino">
+      <Filter>Arduino Examples</Filter>
+    </None>
+    <None Include="examples\InterfacePanel\ValueList\ValueList.mlx">
+      <Filter>Arduino Examples</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility\CommandDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\CommandDispatcherBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\CommandParameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\InterfacePanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\MegunoLinkProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\Message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\Plot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\StreamParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\Table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\TimePlot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\XYPlot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArduinoTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EEPROMStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MegunoLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="utility\CommandDispatcherBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\CommandParameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\InterfacePanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\MegunoLinkProtocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\Message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\Plot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\StreamParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\Table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\TimePlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\XYPlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArduinoTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Version.xml" />
+  </ItemGroup>
+</Project>
