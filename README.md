@@ -1,15 +1,16 @@
 # M19O2
 DiY Oxygen Concentrator based on / inspired by the [OxiKit](https://github.com/OxiKit/oxygen-concentrator-how-to-diy-open-source#oxygen-concentrator-how-to-diy-open-source), [OpenOx](https://github.com/hacklabkyiv/openox), [Marut](https://www.technido.com/marut), [RepRap](https://github.com/RepRapLtd/Oxygen-concentrator) and [Project Apollo](https://github.com/oxycon/ProjectApollo) platforms.
 
-![M19O2 render front](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v3_04.png)
+![M19O2 render front](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v3_05.png)
 
 ![M19O2 render rear](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v3_03.png)
 
-![M19O2 render rear](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v3_05.png)
+![M19O2 render rear](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v3_04.png)
 
 ## About
 
 Read about the project on [Hackaday](https://hackaday.com/2021/04/26/indian-makers-respond-to-the-covid-19-pandemic-by-producing-oxygen-concentrators/).
+Also check out the project on the [hackaday.io](https://hackaday.io/project/181201-m19o2-oxygen-concentrator) project page.
 
 ## Contribute
 
