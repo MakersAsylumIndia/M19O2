@@ -14,6 +14,7 @@ Also check out the project on the [hackaday.io](https://hackaday.io/project/1812
 
 The **M19O2** Oxygen Concentrator is "Open Source Hardware" as certified by the [OSHWA](https://certification.oshwa.org/in000029.html).
 OSHWA UID for the M19O2 is **IN000029**
+
 <a href="https://certification.oshwa.org/in000029.html"><img src="images/M19O2_OSHWA_UID_IN000029.svg" alt="OSHWA UID IN000029" width="400">
 
 ## Contribute
