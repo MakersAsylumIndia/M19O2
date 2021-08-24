@@ -12,6 +12,10 @@ DiY Oxygen Concentrator based on / inspired by the [OxiKit](https://github.com/O
 Read about the project on [Hackaday](https://hackaday.com/2021/04/26/indian-makers-respond-to-the-covid-19-pandemic-by-producing-oxygen-concentrators/).
 Also check out the project on the [hackaday.io](https://hackaday.io/project/181201-m19o2-oxygen-concentrator) project page.
 
+The **M19O2** Oxygen Concentrator is "Open Source Hardware" as certified by the [OSHWA](https://certification.oshwa.org/in000029.html).
+OSHWA UID for the M19O2 is **IN000029**
+<a href="https://certification.oshwa.org/in000029.html"><img src="images/M19O2_OSHWA_UID_IN000029.svg" alt="OSHWA UID IN000029" width="400">
+
 ## Contribute
 
 You can contribute on the [Ketto fundraiser page](https://www.ketto.org/fundraiser/m19-oxygen-concentrators-make-in-india)
@@ -71,7 +75,7 @@ To contribute your work to the M19 Collective, open your repository in a browser
 
 Licenses
 
-<a href="LICENSE.md"><img src="images/Licenses_facts.svg" width="400" alt="Open Source Licenses Facts"/></a>
+<a href="LICENSE.md"><img src="images/M19O2_licenses.svg" width="400" alt="Open Source Licenses Facts"/></a>
 
 #### Hardware
 CERN Open Hardware License Version 2 - Strongly Reciprocal ([CERN-OHL-S-2.0](https://spdx.org/licenses/CERN-OHL-S-2.0.html)).
