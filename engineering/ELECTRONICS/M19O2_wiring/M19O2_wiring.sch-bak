@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "M19O2_Wiring"
-Date "2021-06-29"
-Rev "V0.2"
+Date "2021-09-03"
+Rev "V4"
 Comp "Redrawn by: Anool Mahidharia"
 Comment1 "Original by: Ashish Pardeshi"
 Comment2 ""
@@ -62,12 +62,12 @@ $EndComp
 $Comp
 L M19O2_wiring:Switch S2
 U 1 1 609C24BB
-P 4175 4175
-F 0 "S2" V 4115 4245 50  0001 L CNN
-F 1 "Switch" H 4020 4365 50  0000 L CNB
-F 2 "" H 4175 4175 50  0001 C CNN
-F 3 "" H 4175 4175 50  0001 C CNN
-	1    4175 4175
+P 4175 5275
+F 0 "S2" V 4115 5345 50  0001 L CNN
+F 1 "Switch" H 4020 5465 50  0000 L CNB
+F 2 "" H 4175 5275 50  0001 C CNN
+F 3 "" H 4175 5275 50  0001 C CNN
+	1    4175 5275
 	0    1    1    0   
 $EndComp
 $Comp
@@ -84,12 +84,13 @@ $EndComp
 $Comp
 L M19O2_wiring:Fan M6
 U 1 1 60A1A925
-P 6850 5925
-F 0 "M6" H 6455 5840 50  0001 L CNN
-F 1 "Fan" H 6635 5675 50  0000 L CNB
-F 2 "" H 6850 5925 50  0001 C CNN
-F 3 "" H 6850 5925 50  0001 C CNN
-	1    6850 5925
+P 6850 4975
+F 0 "M6" H 6455 4890 50  0001 L CNN
+F 1 "Fan" H 6635 4725 50  0000 L CNB
+F 2 "" H 6850 4975 50  0001 C CNN
+F 3 "" H 6850 4975 50  0001 C CNN
+F 4 "COOLING FANS" H 7125 5500 50  0000 C CNB "Field4"
+	1    6850 4975
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -118,7 +119,7 @@ Text Notes 11900 3025 0    50   ~ 10
 Sieve B
 Text Notes 11200 3025 0    50   ~ 10
 Sieve A
-Text Notes 2950 6150 0    61   ~ 12
+Text Notes 2950 7725 0    61   ~ 12
 Compressor\n2 hp\n\n180 LPM at 3 bar\n150 LPM at 6 bar 
 Text Notes 2700 1740 0    89   ~ 18
 ~
@@ -127,14 +128,14 @@ AC to DC \nPower Supply\n24V DC, >100W
 Text Notes 6775 1675 0    61   ~ 12
 DC to DC\nConverter\n+5V for Arduino
 Text Notes 8425 975  0    61   ~ 12
-Any Arduino Baord\nor Compatible will\nwork here\n
+Any Arduino Board\nor Compatible will\nwork here\n
 Text Notes 9850 950  0    61   ~ 12
 4 Relay Board\nRelay Coil 5V
-Text Notes 2925 4375 0    61   ~ 12
+Text Notes 2925 5500 0    61   ~ 12
 Over pressure \nsafety Switch\nFor Compressor\nDanfoss KP-35
 Text Notes 3075 1375 0    61   ~ 12
 ON/OFF Switch & Fuse\nFor Whole System
-Text Notes 2050 6575 0    61   ~ 12
+Text Notes 2050 8150 0    61   ~ 12
 Earth\n
 Wire Notes Line
 	5980 9960 11665 9960
@@ -249,74 +250,66 @@ Wire Wire Line
 Wire Wire Line
 	3875 2100 3400 2100
 Wire Wire Line
-	4175 3175 4175 3975
+	4175 3175 4175 5075
 Connection ~ 4175 3175
 $Comp
 L M19O2_wiring:Switch S7
 U 1 1 60E23E0E
-P 4175 4875
-F 0 "S7" V 4115 4945 50  0001 L CNN
-F 1 "Switch" H 4025 5075 50  0001 L CNB
-F 2 "" H 4175 4875 50  0001 C CNN
-F 3 "" H 4175 4875 50  0001 C CNN
-	1    4175 4875
+P 4175 6325
+F 0 "S7" V 4115 6395 50  0001 L CNN
+F 1 "Switch" H 4025 6525 50  0001 L CNB
+F 2 "" H 4175 6325 50  0001 C CNN
+F 3 "" H 4175 6325 50  0001 C CNN
+	1    4175 6325
 	0    1    1    0   
 $EndComp
 $Comp
 L M19O2_wiring:Switch S6
 U 1 1 60E24278
-P 3875 4875
-F 0 "S6" V 3815 4945 50  0001 L CNN
-F 1 "Switch" H 3720 5065 62  0001 L CNB
-F 2 "" H 3875 4875 50  0001 C CNN
-F 3 "" H 3875 4875 50  0001 C CNN
-	1    3875 4875
+P 3875 6325
+F 0 "S6" V 3815 6395 50  0001 L CNN
+F 1 "Switch" H 3720 6515 62  0001 L CNB
+F 2 "" H 3875 6325 50  0001 C CNN
+F 3 "" H 3875 6325 50  0001 C CNN
+	1    3875 6325
 	0    1    1    0   
 $EndComp
 Connection ~ 3875 3475
 Wire Wire Line
-	4475 5825 4175 5825
+	4475 7400 4175 7400
 Wire Wire Line
-	4175 5825 4175 5075
+	4175 7400 4175 6525
 $Comp
 L M19O2_wiring:Compressor M5
 U 1 1 609BE713
-P 4825 5925
-F 0 "M5" H 4800 6490 50  0001 L CNN
-F 1 "Compressor" H 4600 5925 50  0000 L CNB
-F 2 "" H 4825 5925 50  0001 C CNN
-F 3 "" H 4825 5925 50  0001 C CNN
-	1    4825 5925
+P 4825 7500
+F 0 "M5" H 4800 8065 50  0001 L CNN
+F 1 "Compressor" H 4600 7500 50  0000 L CNB
+F 2 "" H 4825 7500 50  0001 C CNN
+F 3 "" H 4825 7500 50  0001 C CNN
+	1    4825 7500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4475 6025 3875 6025
+	4475 7600 3875 7600
+Wire Notes Line width 20 rgb(96, 0, 8)
+	6600 6325 3925 6325
 Wire Wire Line
-	3875 6025 3875 5275
-Wire Notes Line width 10 rgb(96, 0, 8)
-	4575 4875 3925 4875
-Wire Wire Line
-	4825 6300 4825 6375
+	4825 7875 4825 7950
 $Comp
 L M19O2_wiring:Sol_Valve V4
 U 1 1 60E4B85B
-P 4825 4875
-F 0 "V4" H 5160 4934 50  0001 L CNN
-F 1 "Contactor" H 4075 4875 50  0000 L CNB
-F 2 "" H 4825 4875 50  0001 C CNN
-F 3 "" H 4825 4875 50  0001 C CNN
-	1    4825 4875
+P 6850 6325
+F 0 "V4" H 7185 6384 50  0001 L CNN
+F 1 "CONTACTOR" H 6075 6325 50  0000 L CNB
+F 2 "" H 6850 6325 50  0001 C CNN
+F 3 "" H 6850 6325 50  0001 C CNN
+F 4 "[+]" H 6750 6150 50  0000 C CNB "Field4"
+F 5 "[-]" H 6750 6500 50  0000 C CNB "Field5"
+F 6 "24 V DC" H 6350 6250 50  0000 C CNB "Field6"
+	1    6850 6325
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4825 5125 4825 5275
-Wire Wire Line
-	4825 5275 3875 5275
-Connection ~ 3875 5275
-Wire Wire Line
-	3875 5275 3875 5075
-Wire Wire Line
-	4825 4625 4825 4050
 $Comp
 L power:GND #PWR01
 U 1 1 60AB3577
@@ -425,7 +418,7 @@ Connection ~ 11125 1925
 Wire Wire Line
 	11125 1925 11125 1625
 Wire Wire Line
-	6525 3175 8725 3175
+	6525 3175 8650 3175
 Wire Wire Line
 	11125 3175 11125 2225
 Connection ~ 6525 3175
@@ -453,95 +446,89 @@ F 3 "" H 13000 2725 50  0001 C CNN
 	1    13000 2725
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	13000 1525 11000 1525
-Wire Notes Line
-	13000 2475 13000 1525
+Wire Notes Line width 10 style dash_dot rgb(192, 0, 0)
+	13000 1525 11050 1525
+Wire Notes Line width 10 style dash_dot rgb(192, 0, 0)
+	13000 2375 13000 1525
 Text Notes 12625 3100 0    50   ~ 10
 Equalise\n(not used)
 Wire Wire Line
-	3875 3475 3875 4675
-Wire Wire Line
-	13450 3925 13450 1325
-Wire Wire Line
-	13450 1325 11000 1325
+	3875 3475 3875 6125
 Wire Wire Line
 	11000 1225 13550 1225
 Wire Wire Line
 	13550 1225 13550 4050
 Wire Wire Line
-	4825 4050 13550 4050
+	2325 7950 4825 7950
+Connection ~ 2325 7950
 Wire Wire Line
-	2325 6375 4825 6375
-Connection ~ 2325 6375
-Wire Wire Line
-	2325 6375 2325 6550
+	2325 7950 2325 8125
 Wire Wire Line
 	5450 3325 2325 3325
 Connection ~ 2325 3325
 Wire Wire Line
-	2325 3325 2325 6375
+	2325 3325 2325 7950
 $Comp
 L M19O2_wiring:Fan M7
 U 1 1 60F34627
-P 7350 5925
-F 0 "M7" H 6955 5840 50  0001 L CNN
-F 1 "Fan" H 7135 5675 50  0000 L CNB
-F 2 "" H 7350 5925 50  0001 C CNN
-F 3 "" H 7350 5925 50  0001 C CNN
-	1    7350 5925
+P 7350 4975
+F 0 "M7" H 6955 4890 50  0001 L CNN
+F 1 "Fan" H 7135 4725 50  0000 L CNB
+F 2 "" H 7350 4975 50  0001 C CNN
+F 3 "" H 7350 4975 50  0001 C CNN
+	1    7350 4975
 	1    0    0    -1  
 $EndComp
 $Comp
 L M19O2_wiring:Fan M8
 U 1 1 60F350DF
-P 7850 5925
-F 0 "M8" H 7455 5840 50  0001 L CNN
-F 1 "Fan" H 7635 5675 50  0000 L CNB
-F 2 "" H 7850 5925 50  0001 C CNN
-F 3 "" H 7850 5925 50  0001 C CNN
-	1    7850 5925
+P 7850 4975
+F 0 "M8" H 7455 4890 50  0001 L CNN
+F 1 "Fan" H 7635 4725 50  0000 L CNB
+F 2 "" H 7850 4975 50  0001 C CNN
+F 3 "" H 7850 4975 50  0001 C CNN
+	1    7850 4975
 	1    0    0    -1  
 $EndComp
 $Comp
 L M19O2_wiring:Fan M9
 U 1 1 60F355EF
-P 8350 5925
-F 0 "M9" H 7955 5840 50  0001 L CNN
-F 1 "Fan" H 8135 5675 50  0000 L CNB
-F 2 "" H 8350 5925 50  0001 C CNN
-F 3 "" H 8350 5925 50  0001 C CNN
-	1    8350 5925
+P 8350 4975
+F 0 "M9" H 7955 4890 50  0001 L CNN
+F 1 "Fan" H 8135 4725 50  0000 L CNB
+F 2 "" H 8350 4975 50  0001 C CNN
+F 3 "" H 8350 4975 50  0001 C CNN
+	1    8350 4975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 5600 6850 5500
+	6850 4650 6850 4550
 Wire Wire Line
-	6850 5500 7350 5500
+	6850 4550 7350 4550
 Wire Wire Line
-	8350 5500 8350 5600
+	8350 4550 8350 4650
 Wire Wire Line
-	7850 5600 7850 5500
-Connection ~ 7850 5500
+	7850 4650 7850 4550
+Connection ~ 7850 4550
 Wire Wire Line
-	7850 5500 8350 5500
+	7850 4550 8350 4550
 Wire Wire Line
-	7350 5600 7350 5500
-Connection ~ 7350 5500
+	7350 4650 7350 4550
+Connection ~ 7350 4550
 Wire Wire Line
-	8350 6250 8350 6400
+	8350 5300 8350 5450
 Wire Wire Line
-	8350 6400 7850 6400
+	8350 5450 7850 5450
 Wire Wire Line
-	6850 6400 6850 6250
+	6850 5450 6850 5300
 Wire Wire Line
-	7350 6250 7350 6400
-Connection ~ 7350 6400
+	7350 5300 7350 5450
+Connection ~ 7350 5450
 Wire Wire Line
-	7350 6400 6850 6400
+	7350 5450 6850 5450
 Wire Wire Line
-	7850 6250 7850 6400
-Connection ~ 7850 6400
+	7850 5300 7850 5450
+Connection ~ 7850 5450
 Wire Wire Line
 	13000 3475 13000 2975
 $Comp
@@ -733,22 +720,22 @@ Text Label 8200 2425 2    50   ~ 0
 5V
 NoConn ~ 9100 1325
 Wire Wire Line
-	7350 6400 7850 6400
+	7350 5450 7850 5450
 Wire Wire Line
-	7350 5500 7850 5500
+	7350 4550 7850 4550
 Wire Wire Line
-	8350 5500 8725 5500
+	8350 4550 8650 4550
 Wire Wire Line
-	8725 5500 8725 3175
-Connection ~ 8350 5500
-Connection ~ 8725 3175
+	8650 4550 8650 3175
+Connection ~ 8350 4550
+Connection ~ 8650 3175
 Wire Wire Line
-	8725 3175 11125 3175
+	8650 3175 11125 3175
 Wire Wire Line
-	8350 6400 8800 6400
+	8350 5450 8800 5450
 Wire Wire Line
-	8800 6400 8800 3475
-Connection ~ 8350 6400
+	8800 5450 8800 3475
+Connection ~ 8350 5450
 Connection ~ 8800 3475
 Wire Wire Line
 	8800 3475 11575 3475
@@ -761,7 +748,7 @@ I2C_SDA
 Text Label 8200 2125 2    50   ~ 0
 I2C_SCL
 Wire Notes Line width 50 style dash_dot rgb(249, 0, 0)
-	5750 1250 5750 7750
+	5750 1250 5750 9175
 $Comp
 L M19O2_wiring:ADS1115IDGS U2
 U 1 1 61171576
@@ -773,20 +760,20 @@ F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 11375 6750 50  0001 C CNN
 	1    11425 7650
 	-1   0    0    -1  
 $EndComp
-Text Notes 4675 7875 2    80   ~ 16
+Text Notes 4675 9300 2    80   ~ 16
 DANGER\nHIGH VOLTAGE\n230V AC
 Wire Notes Line width 50 style dash_dot rgb(255, 0, 0)
-	4750 7675 6750 7675
-Text Notes 6800 7875 0    80   ~ 16
+	4750 9100 6750 9100
+Text Notes 6800 9300 0    80   ~ 16
 DC\nLOW VOLTAGE\n24V DC MAX
 Wire Notes Line width 50 style dash_dot rgb(255, 0, 0)
-	4750 7675 4975 7575
+	4750 9100 4975 9000
 Wire Notes Line width 50 style dash_dot rgb(255, 0, 0)
-	6725 7675 6475 7775
+	6725 9100 6475 9200
 Wire Notes Line width 50 style dash_dot rgb(255, 0, 0)
-	6725 7675 6475 7575
+	6725 9100 6475 9000
 Wire Notes Line width 50 style dash_dot rgb(255, 0, 0)
-	4750 7675 4975 7800
+	4750 9100 4975 9225
 $Comp
 L M19O2_wiring:OOM102 U3
 U 1 1 6127AE57
@@ -894,30 +881,19 @@ Text Label 9800 8800 0    50   ~ 0
 I2C_SCL
 Text Label 9800 8900 0    50   ~ 0
 I2C_SDA
-Wire Wire Line
-	4725 3925 4725 4550
-Wire Wire Line
-	4725 4550 4175 4550
-Wire Wire Line
-	4725 3925 13450 3925
-Connection ~ 4175 4550
-Wire Wire Line
-	4175 4550 4175 4675
-Wire Wire Line
-	4175 4375 4175 4550
-Wire Notes Line
+Wire Notes Line width 20 rgb(192, 0, 0)
 	9550 4525 15550 4525
-Wire Notes Line
+Wire Notes Line width 20 rgb(192, 0, 0)
 	15550 4525 15550 9525
-Wire Notes Line
+Wire Notes Line width 20 rgb(192, 0, 0)
 	15550 9525 9550 9525
-Wire Notes Line
+Wire Notes Line width 20 rgb(192, 0, 0)
 	9550 9525 9550 4525
-Text Notes 14150 5575 0    60   ~ 12
-TEMP/HUMIDITY SENSOR\nBUZZER\nPUSH BUTTON\nLED RGB
-Text Notes 14150 7825 0    60   ~ 12
+Text Notes 13850 5575 0    60   ~ 12
+TEMP/HUMIDITY SENSOR - DHT22\nBUZZER\nPUSH BUTTON - COMPRESSOR\nLED RGB
+Text Notes 13850 7825 0    60   ~ 12
 OXYGEN SENSOR\nOOM102 WITH\nADS1115 A/D CONVERTER\nI2C INTERFACE
-Text Notes 14150 8900 0    60   ~ 12
+Text Notes 13850 8900 0    60   ~ 12
 WAVESHARE 2.23" OLED\n128 x 32 pixel\nI2C INTERFACE
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
@@ -933,34 +909,34 @@ $EndComp
 $Comp
 L Graphic:SYM_Earth_Protective_Large #SYM1
 U 1 1 61373F1B
-P 1850 6550
-F 0 "#SYM1" H 1850 6750 50  0001 C CNN
-F 1 "SYM_Earth_Protective_Large" H 1850 6375 50  0001 C CNN
-F 2 "" H 1850 6600 50  0001 C CNN
-F 3 "~" H 1850 6600 50  0001 C CNN
-	1    1850 6550
+P 1850 8125
+F 0 "#SYM1" H 1850 8325 50  0001 C CNN
+F 1 "SYM_Earth_Protective_Large" H 1850 7950 50  0001 C CNN
+F 2 "" H 1850 8175 50  0001 C CNN
+F 3 "~" H 1850 8175 50  0001 C CNN
+	1    1850 8125
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth_Clean #PWR02
 U 1 1 609B02BA
-P 2325 6550
-F 0 "#PWR02" H 2575 6550 50  0001 C CNN
-F 1 "Earth_Clean" H 2625 6400 50  0001 C CNN
-F 2 "" H 2325 6500 50  0001 C CNN
-F 3 "~" H 2325 6500 50  0001 C CNN
-	1    2325 6550
+P 2325 8125
+F 0 "#PWR02" H 2575 8125 50  0001 C CNN
+F 1 "Earth_Clean" H 2625 7975 50  0001 C CNN
+F 2 "" H 2325 8075 50  0001 C CNN
+F 3 "~" H 2325 8075 50  0001 C CNN
+	1    2325 8125
 	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:SYM_Flash_XLarge #SYM2
 U 1 1 61377BAB
-P 3675 7725
-F 0 "#SYM2" V 3525 7725 50  0001 C CNN
-F 1 "SYM_Flash_XLarge" V 3825 7725 50  0001 C CNN
-F 2 "" H 3675 7700 50  0001 C CNN
-F 3 "~" H 4075 7625 50  0001 C CNN
-	1    3675 7725
+P 3675 9150
+F 0 "#SYM2" V 3525 9150 50  0001 C CNN
+F 1 "SYM_Flash_XLarge" V 3825 9150 50  0001 C CNN
+F 2 "" H 3675 9125 50  0001 C CNN
+F 3 "~" H 4075 9050 50  0001 C CNN
+	1    3675 9150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -7928,19 +7904,30 @@ AE BC F4 62 BA D5 AA 77 2D 00 20 CA 21 E4 03 00 00 00 00 00 88 5A 48 EC 04 00 00
 FF 3F 53 76 13 2F 96 E1 76 3B 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-$Comp
-L Graphic:SYM_Flash_XLarge #SYM?
-U 1 1 613F1F8D
-P 11175 950
-F 0 "#SYM?" V 11025 950 50  0001 C CNN
-F 1 "SYM_Flash_XLarge" V 11325 950 50  0001 C CNN
-F 2 "" H 11175 925 50  0001 C CNN
-F 3 "~" H 11575 850 50  0001 C CNN
-	1    11175 950 
-	1    0    0    -1  
-$EndComp
-Text Notes 11025 1325 0    50   ~ 10
-230V AC here
-Text Notes 2925 4975 0    61   ~ 12
-Compressor\nON / OFF
+Text Notes 2925 6450 0    61   ~ 12
+Compressor\nContactor\nON / OFF
+Wire Wire Line
+	4175 5475 4175 6125
+Wire Wire Line
+	3875 6525 3875 7600
+Wire Wire Line
+	6850 6575 6850 6725
+Wire Wire Line
+	11125 1625 11125 1325
+Connection ~ 11125 1625
+Wire Wire Line
+	11125 1325 11000 1325
+Wire Wire Line
+	8950 6725 8950 4050
+Wire Wire Line
+	6850 6725 8950 6725
+Wire Wire Line
+	8950 4050 13550 4050
+Wire Wire Line
+	8800 5450 8800 5925
+Wire Wire Line
+	8800 5925 6850 5925
+Wire Wire Line
+	6850 5925 6850 6075
+Connection ~ 8800 5450
 $EndSCHEMATC
