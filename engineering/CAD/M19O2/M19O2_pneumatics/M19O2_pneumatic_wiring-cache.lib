@@ -286,26 +286,6 @@ X EX1 5 -650 -350 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# M19O2_pneumatic_Valve_non_return
-#
-DEF M19O2_pneumatic_Valve_non_return U 0 40 N N 1 F N
-F0 "U" 125 200 50 H V C CNN
-F1 "M19O2_pneumatic_Valve_non_return" 125 -150 50 H V C CNN
-F2 "" 125 0 50 H I C CNN
-F3 "" 125 0 50 H I C CNN
-DRAW
-C 125 0 125 0 0 20 f
-P 2 0 0 20 -400 -100 -500 100 N
-P 2 0 0 20 0 0 -500 0 N
-P 2 0 0 20 300 0 50 -250 N
-P 2 0 0 20 300 0 50 250 N
-P 2 0 0 20 300 0 500 0 N
-P 5 0 0 20 0 -100 -100 100 -200 -100 -300 100 -400 -100 N
-X IN IN -500 0 125 R 50 50 1 1 P
-X OUT OUT 500 0 125 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # M19O2_pneumatic_WaterSeparator
 #
 DEF M19O2_pneumatic_WaterSeparator WS 0 40 N N 1 F N

@@ -238,13 +238,13 @@ Wire Notes Line width 10 rgb(96, 0, 8)
 Wire Notes Line width 10 rgb(96, 0, 8)
 	3200 1725 3200 2025
 Wire Wire Line
-	5450 3175 4175 3175
+	5450 3175 5200 3175
 Wire Wire Line
 	4175 3175 4175 1800
 Wire Wire Line
 	4175 1800 4000 1800
 Wire Wire Line
-	5450 3475 3875 3475
+	5450 3475 5100 3475
 Wire Wire Line
 	3875 3475 3875 2100
 Wire Wire Line
@@ -7945,22 +7945,30 @@ NoConn ~ 4500 6925
 NoConn ~ 4600 6925
 NoConn ~ 4700 6925
 NoConn ~ 4800 6925
-NoConn ~ 4900 6925
-NoConn ~ 5000 6925
-Wire Wire Line
-	5200 6925 5200 6600
-Wire Wire Line
-	5200 6600 4175 6600
 Connection ~ 4175 6600
 Wire Wire Line
 	4175 6600 4175 6125
-Wire Wire Line
-	5100 6925 5100 6775
-Wire Wire Line
-	5100 6775 3875 6775
 Connection ~ 3875 6775
 Wire Wire Line
 	3875 6775 3875 8350
 Text Notes 2925 7300 0    61   ~ 12
 HOUR COUNTER\n(required to track\nmachine run time)
+Wire Wire Line
+	4900 6925 4900 6775
+Wire Wire Line
+	4900 6775 3875 6775
+Wire Wire Line
+	5000 6925 5000 6600
+Wire Wire Line
+	5000 6600 4175 6600
+Wire Wire Line
+	5100 6925 5100 3475
+Connection ~ 5100 3475
+Wire Wire Line
+	5100 3475 3875 3475
+Wire Wire Line
+	5200 6925 5200 3175
+Connection ~ 5200 3175
+Wire Wire Line
+	5200 3175 4175 3175
 $EndSCHEMATC

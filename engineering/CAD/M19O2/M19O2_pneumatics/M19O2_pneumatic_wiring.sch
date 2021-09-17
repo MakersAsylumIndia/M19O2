@@ -113,17 +113,6 @@ F 3 "" H 7850 7775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L M19O2_pneumatic:Valve_non_return U?
-U 1 1 60E547FE
-P 5850 6925
-F 0 "U?" V 5825 6600 50  0001 R CNN
-F 1 "VALVE, NON-RETURN" V 5850 6600 75  0000 R CNB
-F 2 "" H 5850 6925 50  0001 C CNN
-F 3 "" H 5850 6925 50  0001 C CNN
-	1    5850 6925
-	0    -1   -1   0   
-$EndComp
-$Comp
 L M19O2_pneumatic:Reservoir T?
 U 1 1 60E55320
 P 5850 5650
@@ -251,7 +240,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 7775 5850 7775
 Wire Wire Line
-	5850 7425 5850 7775
+	5850 7200 5850 7775
 Connection ~ 5850 7775
 Wire Wire Line
 	5850 7775 4100 7775
@@ -268,11 +257,11 @@ Wire Bus Line
 Wire Bus Line
 	8350 7775 8350 7950
 Wire Bus Line
-	5850 7425 5850 7775
+	5850 7200 5850 7775
 Wire Wire Line
-	5850 6275 5850 6425
+	5850 6275 5850 6700
 Wire Bus Line
-	5850 6425 5850 6275
+	5850 6700 5850 6275
 Wire Wire Line
 	5850 5025 5850 4850
 Wire Wire Line
@@ -496,4 +485,25 @@ Wire Bus Line
 	5325 2275 5325 1650
 Text Notes 5525 3225 0    75   ~ 0
 Machined Aluminum or Brass\n(laser cut acrylic works too)\nOD to suit ID of pneumatic pipe\nOrifice bore dia = betn 1.0 to 1.2 mm\nLength, approx 10 mm or more\nAll edges deburred
+Wire Wire Line
+	6400 14850 6400 15850
+Wire Wire Line
+	6400 15850 6225 15850
+Wire Bus Line
+	6225 15850 6400 15850
+Wire Bus Line
+	6400 15850 6400 14850
+Text GLabel 6225 15850 0    100  Output ~ 20
+WATER_DRAIN
+$Comp
+L M19O2_pneumatic:Orifice O?
+U 1 1 614C4C49
+P 5850 6950
+F 0 "O?" H 5850 7325 50  0001 C CNN
+F 1 "ORIFICE" H 5850 7225 75  0000 C CNB
+F 2 "" H 5850 6950 50  0001 C CNN
+F 3 "" H 5850 6950 50  0001 C CNN
+	1    5850 6950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
