@@ -5,7 +5,7 @@ $Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 1
 Title "M19O2 Pneumatic Circuit"
-Date "2021-07-16"
+Date "2021-10-21"
 Rev "v2"
 Comp "Maker's Asylum"
 Comment1 "Anool Mahidharia"
@@ -113,17 +113,6 @@ F 3 "" H 7850 7775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L M19O2_pneumatic:Valve_non_return U?
-U 1 1 60E547FE
-P 5850 6925
-F 0 "U?" V 5825 6600 50  0001 R CNN
-F 1 "VALVE, NON-RETURN" V 5850 6600 75  0000 R CNB
-F 2 "" H 5850 6925 50  0001 C CNN
-F 3 "" H 5850 6925 50  0001 C CNN
-	1    5850 6925
-	0    -1   -1   0   
-$EndComp
-$Comp
 L M19O2_pneumatic:Reservoir T?
 U 1 1 60E55320
 P 5850 5650
@@ -159,23 +148,23 @@ $EndComp
 $Comp
 L M19O2_pneumatic:Flow_Reg_uni_dir O?
 U 1 1 60E5C14C
-P 7525 1650
-F 0 "O?" H 7575 2350 50  0001 C CNN
-F 1 "BLEED VALVE, UNI-DIRECTION" H 7525 2600 75  0000 C CNB
-F 2 "" H 7525 1650 50  0001 C CNN
-F 3 "" H 7525 1650 50  0001 C CNN
-	1    7525 1650
+P 6125 1650
+F 0 "O?" H 6175 2350 50  0001 C CNN
+F 1 "BLEED VALVE, UNI-DIRECTION" H 6125 2600 75  0000 C CNB
+F 2 "" H 6125 1650 50  0001 C CNN
+F 3 "" H 6125 1650 50  0001 C CNN
+	1    6125 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L M19O2_pneumatic:OOM102_flow U?
 U 1 1 60E60645
-P 6075 1050
-F 0 "U?" V 7100 1075 50  0001 C CNN
-F 1 "O2 SENSOR" V 5725 325 75  0000 C CNB
-F 2 "" H 6075 1050 50  0001 C CNN
-F 3 "" H 6075 1050 50  0001 C CNN
-	1    6075 1050
+P 7675 1050
+F 0 "U?" V 8700 1075 50  0001 C CNN
+F 1 "O2 SENSOR" V 7350 1050 75  0000 C CNB
+F 2 "" H 7675 1050 50  0001 C CNN
+F 3 "" H 7675 1050 50  0001 C CNN
+	1    7675 1050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -251,7 +240,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 7775 5850 7775
 Wire Wire Line
-	5850 7425 5850 7775
+	5850 7200 5850 7775
 Connection ~ 5850 7775
 Wire Wire Line
 	5850 7775 4100 7775
@@ -268,11 +257,11 @@ Wire Bus Line
 Wire Bus Line
 	8350 7775 8350 7950
 Wire Bus Line
-	5850 7425 5850 7775
+	5850 7200 5850 7775
 Wire Wire Line
-	5850 6275 5850 6425
+	5850 6275 5850 6700
 Wire Bus Line
-	5850 6425 5850 6275
+	5850 6700 5850 6275
 Wire Wire Line
 	5850 5025 5850 4850
 Wire Wire Line
@@ -344,7 +333,7 @@ Wire Bus Line
 Wire Bus Line
 	8575 12275 8575 12500
 Wire Wire Line
-	7075 1650 6475 1650
+	7275 1650 6675 1650
 Wire Wire Line
 	5675 1650 5325 1650
 Wire Bus Line
@@ -352,7 +341,7 @@ Wire Bus Line
 Wire Bus Line
 	5325 1650 5675 1650
 Wire Bus Line
-	6475 1650 7075 1650
+	6675 1650 7275 1650
 Wire Wire Line
 	8075 1650 8375 1650
 Wire Bus Line
@@ -385,21 +374,10 @@ Text Notes 5575 4550 0    75   ~ 0
 15 LPM range
 Text Notes 7200 4550 0    75   ~ 0
 Bubbler bottle
-Text Notes 5675 1100 2    75   ~ 0
+Text Notes 8025 1375 0    75   ~ 0
 OOM102 or similar\nElectro-chemical sensor\nconnected to Electronics
-Text Notes 6700 1000 0    75   ~ 0
+Text Notes 6425 1100 2    75   ~ 0
 Bleed valve, one way\nset to about less than 0.3 LPM
-$Comp
-L M19O2_pneumatic:Orifice O?
-U 1 1 60F1C1D2
-P 5325 2525
-F 0 "O?" H 5325 2900 50  0001 C CNN
-F 1 "ORIFICE" V 5225 2950 75  0000 C CNB
-F 2 "" H 5325 2525 50  0001 C CNN
-F 3 "" H 5325 2525 50  0001 C CNN
-	1    5325 2525
-	0    1    1    0   
-$EndComp
 Text Notes 7400 10250 0    75   ~ 0
 Use a single 5/3 valve\nor two 3/2 valves\n1/2" or 3/8" ports\n24 VDC coil
 Wire Bus Line
@@ -481,19 +459,34 @@ F 3 "" H 5850 10000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 3575 5325 3575
-Wire Wire Line
-	5325 2275 5325 1650
-Wire Wire Line
-	5325 2775 5325 3575
 Connection ~ 5325 3575
 Wire Wire Line
 	5325 3575 5650 3575
 Wire Bus Line
 	5000 3575 5325 3575
+Wire Wire Line
+	6400 14850 6400 15850
+Wire Wire Line
+	6400 15850 6225 15850
 Wire Bus Line
-	5325 3575 5325 2750
+	6225 15850 6400 15850
 Wire Bus Line
-	5325 2275 5325 1650
-Text Notes 5525 3225 0    75   ~ 0
-Machined Aluminum or Brass\n(laser cut acrylic works too)\nOD to suit ID of pneumatic pipe\nOrifice bore dia = betn 1.0 to 1.2 mm\nLength, approx 10 mm or more\nAll edges deburred
+	6400 15850 6400 14850
+Text GLabel 6225 15850 0    100  Output ~ 20
+WATER_DRAIN
+$Comp
+L M19O2_pneumatic:Orifice O?
+U 1 1 614C4C49
+P 5850 6950
+F 0 "O?" H 5850 7325 50  0001 C CNN
+F 1 "ORIFICE" H 5850 7225 75  0000 C CNB
+F 2 "" H 5850 6950 50  0001 C CNN
+F 3 "" H 5850 6950 50  0001 C CNN
+	1    5850 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5325 1650 5325 3575
+Wire Bus Line
+	5325 1650 5325 3575
 $EndSCHEMATC
