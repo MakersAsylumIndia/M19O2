@@ -77,7 +77,7 @@ const int debounce = 200;
 
 //Set delay timing here
 //**************************************************************************
-const int S_ON_Eq_OFF = 4000;     //One sieve on, and equalisation valve off
+const int S_ON_Eq_OFF = 3500;     //One sieve on, and equalisation valve off
 const int S_ON_Eq_ON = 450;       //One sieve on, and euqialisation valve on
 const int BS_ON_Eq_ON = 700;     //all valves low
 
@@ -268,7 +268,7 @@ void DISPLAY_DATA() {
   display.println("TEMP: ");          //print Temp:
 
   display.setCursor(30, 0);
-  display.println(t, 0);              //print the temperature value, without decimal points
+  display.print(t, 0);              //print the temperature value, without decimal points
   display.setCursor(45, 0);
   if (t < 30) {
     display.println("norm");
@@ -284,7 +284,7 @@ void DISPLAY_DATA() {
   display.println("HUM: ");            //print Hum :
 
   display.setCursor(105, 0);
-  display.println(h, 0);              //print the humidity value, without decimal points
+  display.print(h, 0);              //print the humidity value, without decimal points
 
   display.setCursor(0, 12);
   display.println("O2% : ");
