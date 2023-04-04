@@ -1,5 +1,5 @@
 # M19O2
-DiY Oxygen Concentrator based on / inspired by the [OxiKit](https://github.com/OxiKit/oxygen-concentrator-how-to-diy-open-source#oxygen-concentrator-how-to-diy-open-source), [OpenOx](https://github.com/hacklabkyiv/openox), [Marut](https://www.technido.com/marut), [RepRap](https://github.com/RepRapLtd/Oxygen-concentrator) and [Project Apollo](https://github.com/oxycon/ProjectApollo) platforms.
+DiY Oxygen Concentrator based on / inspired by the [OpenOx](https://github.com/hacklabkyiv/openox), [Marut](https://www.technido.com/marut), [RepRap](https://github.com/RepRapLtd/Oxygen-concentrator) and [Project Apollo](https://github.com/oxycon/ProjectApollo) platforms.
 
 ![M19O2 render front](https://github.com/MakersAsylumIndia/M19O2/blob/main/renders/M19O2_v4_08.png)
 
@@ -31,7 +31,7 @@ You can contribute on the [Ketto fundraiser page](https://www.ketto.org/fundrais
 ## Engineering
 
 - [Labview testbench](engineering/software/M19-oxygen-concentrator-testbench) is a testbench executable developed by [Fracktal Works](https://github.com/FracktalWorks), useful for tuning the performance of your concentrator prototypes.
-- [Computer-aided Design/Engineering](engineering/cad-cae) for design, version control and simulation data related to the OxiKit and its iterations. Committed to open-source and open-innovation.
+- [Computer-aided Design/Engineering](engineering/cad-cae) for design, version control and simulation data related to the M19O2 and its iterations. Committed to open-source and open-innovation.
 - [Electronics](engineering/electronics) for all things electronics, including comprehensive design and development data of DIY [Oxygen Analyzers](engineering/electronics/oxygen_analysers) and other [subprojects](engineering/electronics/subprojects).
 
 ## How to use this repo
